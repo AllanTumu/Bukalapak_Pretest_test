@@ -1,0 +1,4 @@
+com/bukalapak/pageObjects/LoginPage.class
+com/bukalapak/testCases/BaseClass.class
+com/bukalapak/utilities/ReadConfig.class
+com/bukalapak/testCases/LoginTest_001.class
