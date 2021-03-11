@@ -58,4 +58,10 @@ public class ReadConfig {
     }
 
 
+    public String getProduct()
+    {
+        String product=pro.getProperty("product");
+        return product;
+    }
+
 }
