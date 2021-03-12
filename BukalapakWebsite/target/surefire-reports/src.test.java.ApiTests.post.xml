@@ -1,0 +1,11 @@
+<testsuite failures="0" name="src/test/java/ApiTests/post.feature" skipped="0" tests="1" time="1.917266">
+  <testcase classname="src.test.java.ApiTests.post" name="Verify Information returned by API" time="1.917266">
+    <system-out>* url 'https://jsonplaceholder.typicode.com/' ............................. passed
+* header Accept = 'application/json' ...................................... passed
+Given path 'posts' ........................................................ passed
+And request {"UserId":"12","Title":"recommendation","id":101,"body":"motorcycle"} . passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And def userResponse = response ........................................... passed</system-out>
+  </testcase>
+</testsuite>
