@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    <title>src.test.java.ApiTests.post</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        <div class="nav-logo">
+          <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          <div class="nav-count">
+            <div class="bg-success" id="nav-pass">1</div>
+            <div class="bg-danger" id="nav-fail">0</div>
+          </div>
+        </div>
+        <div id="nav-type">Scenarios</div>         
+        <div id="nav-date">2021-03-12 04:52:25 AM</div>        
+      <div class="nav-container"><div class="nav-item passed"><a href="#[1:7]">[1:7] Verify Information returned by API </a></div></div></div>
+      <div id="content">
+      <div class="page-heading alert alert-primary"><a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/ApiTests/post.feature</span><span class="feature-description">Check if end point returns correct data</span></div><div class="scenario"><div class="scenario-heading" id="[1:7]"><div class="heading-container"><div class="scenario-tags"></div><span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Verify Information returned by API </span></div><div class="scenario-time passed">ms: 1917</div></div><div class="step-row"><div class="step-container" id="[1:7]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[1:7]bg"><div class="step-container" id="1"><div class="step-ref bg-step">1</div><div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com/'</div></div><div class="time-cell passed">5</div></div><div class="preformatted" data-parent="1">04:52:23.630 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div><div class="step-row" data-parent="[1:7]bg"><div class="step-container" id="2"><div class="step-ref bg-step">2</div><div class="step-cell passed">* header Accept = 'application/json'</div></div><div class="time-cell passed">9</div></div><div class="step-row"><div class="step-container" id="3"><div class="step-ref passed">3</div><div class="step-cell passed">Given path 'posts'</div></div><div class="time-cell passed">5</div></div><div class="step-row"><div class="step-container" id="4"><div class="step-ref passed">4</div><div class="step-cell passed">And request {"UserId":"12","Title":"recommendation","id":101,"body":"motorcycle"}</div></div><div class="time-cell passed">52</div></div><div class="step-row"><div class="step-container" id="5"><div class="step-ref passed">5</div><div class="step-cell passed">When method POST</div></div><div class="time-cell passed">1844</div></div><div class="preformatted" data-parent="5">04:52:24.016 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 69
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.9 (Java/12.0.2)
+{"UserId":"12","Title":"recommendation","id":101,"body":"motorcycle"}
+
+04:52:25.574 response time in milliseconds: 1550.74
+1 &lt; 201
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: Location
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 62e9620d7fbb4c98-AMS
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 86
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 12 Mar 2021 01:52:25 GMT
+1 &lt; Etag: W/"56-6V4wiWVtH1OWNNdIhCMBUioPWeg"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; Expires: -1
+1 &lt; Location: http://jsonplaceholder.typicode.com/posts/101
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=0Yu1PWUvXBv11lhDIRmqdTFjK9zTtUFl7sZEBFOI%2FOxHE0Kdhv20WmLr95Wg1XwEBCJnHi8cgTurZKFnxsz9D1MCrYaLq5MfzD72qAoxvBixV%2FwQaoFmENUQo2mj"}],"max_age":604800,"group":"cf-nel"}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=db7f32e86caeca8c064073971b92036541615513945; expires=Sun, 11-Apr-21 01:52:25 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1615514004
+1 &lt; cf-request-id: 08c5bb9c6c00004c989a1e6000000001
+{
+  "UserId": "12",
+  "Title": "recommendation",
+  "id": 101,
+  "body": "motorcycle"
+}</div><div class="step-row"><div class="step-container" id="6"><div class="step-ref passed">6</div><div class="step-cell passed">Then status 201</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="7"><div class="step-ref passed">7</div><div class="step-cell passed">And def userResponse = response</div></div><div class="time-cell passed">3</div></div></div></div>
+    </div>   
+  </body>
+</html>
